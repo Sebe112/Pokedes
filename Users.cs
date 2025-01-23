@@ -1,0 +1,5 @@
+namespace Pokedex {
+    class User {
+        
+    }
+}
