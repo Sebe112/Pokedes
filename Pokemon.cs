@@ -15,5 +15,24 @@ namespace Pokedex {
         public string VisInfo() {
             return $"Pokemon ID: {ID}, Navn: {Navn}, Type: {Type}, Styrkeniveau: {Styrkeniveau}";
         }
+
+        public void UpdatePokemon(Typer type, int styrkeniveau) {
+            Type = type;
+            Styrkeniveau = styrkeniveau;
+        }
+
+        public string ToCsv() {
+            return $"{ID},{Navn},{Type},{Styrkeniveau}";
+        }
+
+        public static Pokemon FromCsv(string csvLine)
+        {
+            var data = csvLine.Split(',');
+            return new Pokemon(
+                Enum.Parse<PokemonNavne>(data[1]),
+                Enum.Parse<Typer>(data[2]),
+                int.Parse(data[3])
+            );
+        }
     }
 }
