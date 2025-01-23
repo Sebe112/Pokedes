@@ -20,7 +20,7 @@ public enum Typer {
 }
 
 public enum PokemonNavne {
-    Bulbasaur,
+    Bulbasaur = 1,
     Ivysaur,
     Venusaur,
     Charmander,
