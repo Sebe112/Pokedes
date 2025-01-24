@@ -34,3 +34,4 @@ Et konsolprogram til håndtering af Pokémon og brugere. Programmet tillader opr
    dotnet build
    dotnet run
    ```
+   Efter dotnet build burder der være en xml fil i bin mappen
