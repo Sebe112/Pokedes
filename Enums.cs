@@ -1,3 +1,4 @@
+// En enum med pokemon typer
 public enum Typer {
     Normal,
     Fire,
@@ -19,6 +20,7 @@ public enum Typer {
     Fairy
 }
 
+// En enum med næsten alle pokemon navne
 public enum PokemonNavne {
     Bulbasaur = 1,
     Ivysaur,
@@ -737,7 +739,7 @@ public enum PokemonNavne {
     Noivern,
     Xerneas,
     Yveltal,
-        Zygarde,
+    Zygarde,
     Diancie,
     Hoopa,
     Volcanion,
@@ -1009,4 +1011,4 @@ public enum PokemonNavne {
     Miraidon,
     WalkingWake,
     IronLeaves
-    }
+}
